@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.openstreetmap.josm' version '0.8.2'
+}
+
+project.version = 'v1.0.0'
+
+josm {
+    josmCompileVersion = 19439
+    manifest {
+        description = 'Create a node at the center of the selected elements.'
+        mainClass = 'org.openstreetmap.josm.plugins.centernode.CenterNodePlugin'
+        minJosmVersion = 19439
+        iconPath = 'icons/icon.svg'
+    }
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs += [
+        '--add-exports=java.base/sun.security.action=ALL-UNNAMED',
+        '--add-exports=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED',
+        '--add-exports=java.desktop/com.sun.imageio.spi=ALL-UNNAMED'
+    ]
+}
+
+repositories {
+    mavenCentral()
+}

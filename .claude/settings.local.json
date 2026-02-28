@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Repos/center-node/**)",
+      "Read(//c/Repos/multipoly-gone/**)",
+      "Bash(git -C \"c:\\\\Repos\\\\center-node-2\" status)",
+      "Bash(git -C \"c:\\\\Repos\\\\center-node-2\" log --oneline)"
+    ]
+  }
+}
