@@ -14,6 +14,13 @@ bin/
 *.jar
 *.war
 
+# AI
+.claude/
+CLAUDE.md
+.cursorrules
+.cursor/
+.github/copilot-instructions.md
+
 # OS
 .DS_Store
 Thumbs.db
