@@ -6,7 +6,7 @@ For the time being, the plugin will have to be [manually installed](https://wiki
 
 ## Usage
 
-Select a set of ways and choose "Replase with Center Node".
+Select a set of ways and choose "Replace with Center Node".
 
 Before:
 <img width="904" height="907" alt="image" src="https://github.com/user-attachments/assets/ddcbc399-6c96-4b24-8677-a8dcc58b5474" />
